@@ -1,0 +1,8 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Unitttee Summmer",
+    "details": "Um evento aleatório ai pra pessoas aleatórias",
+    "maximumAttendees": 20
+}
