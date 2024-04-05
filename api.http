@@ -2,7 +2,17 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unitttee Summmer",
-    "details": "Um evento aleatório ai pra pessoas aleatórias",
-    "maximumAttendees": 20
+    "title": "Novo evento6",
+    "details": "",
+    "maximumAttendees": 1
+}
+
+###
+
+POST  http://localhost:3333/events/d31e493a-1faa-4176-a8fc-e2b5df712a88/attendees
+Content-Type: application/json
+
+{
+    "name": "gabiela",
+    "email": "gabiel@email.com"
 }
