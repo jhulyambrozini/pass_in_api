@@ -5,6 +5,10 @@ import {
 } from 'fastify-type-provider-zod';
 import { createEvent } from './routes/create-event';
 import { registerForEvent } from './routes/register-for-event';
+import { getEvent } from './routes/get-event';
+import { getAttendeesBadge } from './routes/get-attendee-badge';
+import { checkIn } from './routes/check-in';
+import { getEventAttendees } from './routes/get-event-attendees';
 
 const app = fastify();
 
@@ -13,5 +17,11 @@ app.setSerializerCompiler(serializerCompiler);
 
 app.register(createEvent);
 app.register(registerForEvent);
+
+app.register(getEvent);
+app.register(getEventAttendees);
+
+app.register(getAttendeesBadge);
+app.register(checkIn);
 
 app.listen({ port: 3333 }).then(() => console.log('Server is running'));

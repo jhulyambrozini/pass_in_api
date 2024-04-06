@@ -16,3 +16,16 @@ Content-Type: application/json
     "name": "gabiela",
     "email": "gabiel@email.com"
 }
+
+###
+GET http://localhost:3333/events/d31e493a-1faa-4176-a8fc-e2b5df712a88
+
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/attendees/1/check-in
+
+###
+GET http://localhost:3333/events/d31e493a-1faa-4176-a8fc-e2b5df712a88/attendee?query=gabiela
