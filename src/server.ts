@@ -14,8 +14,13 @@ import { getAttendeesBadge } from './routes/get-attendee-badge';
 import { checkIn } from './routes/check-in';
 import { getEventAttendees } from './routes/get-event-attendees';
 import { errorHandler } from './error-handler';
+import fastifyCors from '@fastify/cors';
 
 const app = fastify();
+
+app.register(fastifyCors, {
+  origin: '*',
+});
 
 app.register(fastifySwagger, {
   swagger: {
@@ -49,4 +54,6 @@ app.register(checkIn);
 
 app.setErrorHandler(errorHandler);
 
-app.listen({ port: 3333 }).then(() => console.log('Server is running'));
+app
+  .listen({ port: 3333, host: '0.0.0.0' })
+  .then(() => console.log('Server is running'));
