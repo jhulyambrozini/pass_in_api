@@ -2,14 +2,13 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Novo evento6",
+    "title": "Novo evento",
     "details": "",
-    "maximumAttendees": 1
+    "maximumAttendees": 10
 }
 
 ###
-
-POST  http://localhost:3333/events/d31e493a-1faa-4176-a8fc-e2b5df712a88/attendees
+POST  http://localhost:3333/events/577c0c6a-1046-424c-b867-378b7a1d73bc/attendees
 Content-Type: application/json
 
 {
