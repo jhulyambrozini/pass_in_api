@@ -31,8 +31,8 @@ Faker.js é uma biblioteca JavaScript utilizada para gerar dados fictícios de f
 - **Zod**:
 Uma biblioteca de validação de esquema TypeScript que permite aos desenvolvedores definir e validar esquemas de dados de forma segura e eficiente. Zod utiliza o sistema de tipos do TypeScript para garantir a integridade dos dados em tempo de compilação.
 
-- **HTTP (Hypertext Transfer Protocol)**:
-Um protocolo de comunicação utilizado para transferir dados pela World Wide Web. HTTP define os métodos de requisição e resposta entre clientes e servidores web, permitindo a transferência de recursos da web.
+- **Fasify Swagger UI**:
+Fastify Swagger UI é uma extensão do Fastify, projetado para ser extremamente eficiente e de baixa sobrecarga. Ele facilita a documentação e a visualização das APIs construídas com o Fastify, integrando automaticamente uma interface de usuário interativa baseada em Swagger para visualizar e testar suas APIs. Essa interface de usuário permite que os desenvolvedores vejam detalhes sobre os endpoints da API, parâmetros de solicitação, respostas esperadas e outros metadados importantes, tudo em um formato fácil de entender.
 
 ## Execução
 - 1 Dá um fork neste repositório
